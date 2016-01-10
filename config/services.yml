@@ -1,0 +1,19 @@
+services:
+    bb3mobi.vkRepost.listener:
+        class: bb3mobi\vkRepost\event\listener
+        arguments:
+            - @template
+            - @config
+            - @user
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
+    bb3mobi.vkRepost.acp_listener:
+        class: bb3mobi\vkRepost\event\acp_listener
+        arguments:
+            - @request
+            - @config
+            - @user
+        tags:
+            - { name: event.listener }

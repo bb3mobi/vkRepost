@@ -1,0 +1,25 @@
+{
+    "name": "bb3mobi/vkRepost",
+    "type": "phpbb-extension",
+    "description": "",
+    "homepage": "http://phpbbguru.net",
+    "version": "1.0.1",
+    "time": "2014-12-01",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Anvar",
+            "homepage": "http://bb3.mobi",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "extra": {
+        "display-name": "Vk Reposting Extension",
+        "soft-require": {
+		   "phpbb/phpbb": ">=3.1.2,<3.2.*@dev"
+        }
+    }
+}
